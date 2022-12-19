@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: url(../imgs/Model\ Animation\ Project\ Background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.modal-btn {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 2rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 10%);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 10px;
+    font-weight: bold;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+}
+
+.modal-btn:hover {
+    background: #fff;
+    color: #000;
+    border: none;
+}
+
+.modal-inner-container {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background: #fff;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: animatemodal;
+    animation-duration: .5s;
+}
+
+.modal {
+    padding: 20px 10px 20px 20px;
+    font-weight: bold;
+}
+
+#close-btn {
+    padding-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: black;
+}
+
+#close-btn:hover {
+    color: red;
+}
+
+#modal-container {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 20%);
+}
+
+@keyframes animatemodal {
+    from {
+        top: 0%;
+    }
+}
