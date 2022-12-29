@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: url(../imgs/Model\ Animation\ Project\ Background.jpg) no-repeat center center fixed;
+    background: url(./img/Modal\ Animation\ Project\ Background.jpg) no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
 }
